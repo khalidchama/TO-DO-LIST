@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 40%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#todo-form {
+    display: flex;
+}
+
+#todo-input {
+    padding: 10px;
+    flex: 70%;
+}
+
+#add-todo-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    flex: 30%;
+    margin-left: 10px;
+    border: none;
+}
+
+#todo-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.edit-btn {
+    padding: 5px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    width: 40px;
+}
+
+.delete-btn {
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    width: 50px;
+}
+
+.new-item-actions {
+    display: flex;
+}
+
+.cancel-edit {
+    text-align: center;
+    width: 40px;
+}
+
+.fa-xmark {
+    font-size: 150%;
+    text-align: center;
+}
+
+.save-btn {
+    padding: 5px;
+    background-color: #04AA6D;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    width: 50px;
+}
+
+@media only screen and (max-width: 992px){
+    .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container {
+        width: 100%;
+    }
+}
